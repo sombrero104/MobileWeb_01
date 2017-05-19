@@ -6,10 +6,11 @@
 			http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
 			
 	<http use-expressions="true">
-		<intercept-url pattern="/board/board" access="hasRole('ROLE_USER')" />
-		<form-login login-page='/login/login' login-processing-url="/login/loginProcess" username-parameter="id" password-parameter="pw" />
-		<csrf />
-		<logout logout-url="/user/logout" logout-success-url="/login/login" />
+		<intercept-url pattern="/board/board.do" access="hasRole('ROLE_USER')" />
+		<form-login login-page='/login/login.do' login-processing-url="/login/loginProcess.do" authentication-failure-url="/login/login.do"
+			username-parameter="username" password-parameter="password" />
+		<logout logout-url="/user/logout.do" logout-success-url="/login/login.do" />
+		<csrf disabled="true" /><!-- TODO [2017.05.05] changed -->
 	</http>
 	
 	<beans:bean id="customAuthenticationProvider" class="sample.support.CustomAuthenticationProvider" />

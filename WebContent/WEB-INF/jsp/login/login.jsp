@@ -7,8 +7,8 @@
 </head>
 <body>
 <h2>로그인 </h2>
-<c:url var="loginProcessUrl" value="/login/loginProcess" />
-<c:url var="joinUrl" value="/login/join" />
+<c:url var="loginProcessUrl" value="/login/loginProcess.do" />
+<c:url var="joinUrl" value="/login/join.do" />
 <form name="form" method="post" action="${loginProcessUrl}">
 	<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
 	<table>

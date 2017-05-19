@@ -4,12 +4,11 @@ import java.util.List;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import org.hibernate.SessionFactory;
-import org.springframework.stereotype.Repository;
 import sample.dao.UserDao;
 import sample.domain.User;
 
-@Repository
 public class UserDaoImpl implements UserDao {
+	
 	private SessionFactory sessionFactory;
 	
 	public void setSessionFactory(SessionFactory sessionFactory) {

@@ -1,5 +1,7 @@
 package sample.dao.impl;
 
-public class LoginDaoImpl {
+import sample.dao.LoginDao;
+
+public class LoginDaoImpl implements LoginDao {
 
 }

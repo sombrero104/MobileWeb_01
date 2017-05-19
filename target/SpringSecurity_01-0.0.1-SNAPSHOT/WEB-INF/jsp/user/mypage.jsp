@@ -6,6 +6,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<a href="/user/deleteAccount">회원탈퇴</a>
+<a href="/user/deleteAccount.do">회원탈퇴</a>
 </body>
 </html>

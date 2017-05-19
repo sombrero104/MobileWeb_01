@@ -1,5 +1,5 @@
 package sample.dao;
 
-public class LoginDao {
+public interface LoginDao {
 
 }

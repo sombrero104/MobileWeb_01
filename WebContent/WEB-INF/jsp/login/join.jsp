@@ -8,7 +8,7 @@
 </head>
 <body>
 <h2>회원가입</h2>
-<c:url var="joinProcess" value="/login/joinProcess" />
+<c:url var="joinProcess" value="/login/joinProcess.do" />
 <form name="form" method="post" action="${joinProcess}">
 	<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
 	<table>

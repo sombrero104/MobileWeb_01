@@ -7,8 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<a href="/user/mypage">마이페이지</a>
-<c:url value="/user/logout" var="logoutUrl" />
+<a href="/user/mypage.do">마이페이지</a>
+<c:url value="/user/logout.do" var="logoutUrl" />
 <form id="logout" action="${logoutUrl}" method="post" >
   <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
   <input type="submit" value="로그아웃">

@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -6,7 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-<a href="/user/mypage">마이페이지</a>
-<a href="/user/logout">로그아웃</a>
+<a href="/user/mypage.do">마이페이지</a>
+<c:url value="/user/logout.do" var="logoutUrl" />
+<form id="logout" action="${logoutUrl}" method="post" >
+  <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+  <input type="submit" value="로그아웃">
+</form>
 </body>
 </html>

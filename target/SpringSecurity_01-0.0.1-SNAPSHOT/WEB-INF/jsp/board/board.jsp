@@ -8,16 +8,6 @@
 </head>
 <body>
 <%@ include file="../include/header.jsp" %>
-<br/>
-<br/>
-보~~~~~~~~~~~~~~~~~~~~드 페이지~~~~~~~~~
-<br/>
-<br/>
-<br/>TODO 게시물1
-<br/>TODO 게시물2
-<br/>TODO 게시물3
-<br/>TODO 게시물4
-<br/>TODO 게시물5
-<br/>TODO 게시물6
+<br/>board
 </body>
 </html>

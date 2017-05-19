@@ -6,6 +6,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	hello!! 인덱스 페이지!!!!!!!!!
+index
 </body>
 </html>
